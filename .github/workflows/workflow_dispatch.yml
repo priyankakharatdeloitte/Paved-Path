@@ -1,7 +1,9 @@
 name: Basic Workflow Dispatch
 
-on: 
-  workflow_dispatch:
+on:
+  repository_dispatch:
+    types:
+      - workflow_dispatch
 
 jobs:
   deploy:
